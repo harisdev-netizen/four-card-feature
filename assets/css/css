@@ -25,9 +25,11 @@ body {
 }
 
 .technology {
-  display: grid;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
+  /* text-align: center; */
 }
 
 .technology__header {
@@ -51,9 +53,10 @@ body {
 }
 
 .technology__highlight {
-  font-weight: 300;
+  font-weight: 280;
   text-transform: uppercase;
   color: var(--color-highlight);
+  background-color: #ff8463;
 }
 
 .technology__description {
@@ -66,11 +69,11 @@ body {
 }
 
 .technology__features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 800px;
+  gap: 30px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -80,34 +83,33 @@ body {
   box-shadow: var(--color-card-shadow);
   padding: 32px;
   width: 350px;
-  /* text-align: center; */
   cursor: pointer;
   transition: transform 0.3s ease;
   border-top: 5px solid;
+  /* flex-basis: calc(33.33% - 30px); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .feature--supervisor {
-  grid-column-start: 1;
-	grid-row-start: 3;
+  order: 1;
   border-color: var(--color-supervisor-border);
 }
 
 .feature--team-builder {
-  grid-column-start: 2;
-	grid-row-start: 2;
+  order: 3;
   border-color: var(--color-team-builder-border);
 }
 
-.feature--calculator {
-  grid-column-start: 3;
-  grid-row-start: 3;
-  border-color: var(--color-calculator-border);
+.feature--karma {
+  order: 4;
+  border-color: var(--color-karma-border);
 }
 
-.feature--karma {
-  grid-column-start: 2;
-  grid-row-start: 4;
-  border-color: var(--color-karma-border);
+.feature--calculator {
+  order: 4;
+  border-color: var(--color-calculator-border);
 }
 
 .feature:hover {
@@ -121,7 +123,7 @@ body {
 }
 
 .feature__description {
-	font-size: 13px;
+  font-size: 13px;
   margin-bottom: 46px;
   color: var(--color-secondary);
 }
@@ -132,11 +134,3 @@ body {
   margin-left: 219px;
 }
 
-.footer__text {
-  font-size: 13px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: hsl(228, 45%, 44%);
-}
