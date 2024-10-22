@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary: #FAFAFA;
+  --color-secondary: #4D4F62;
+  --color-highlight: #4951ec;
+  --color-card-background: #FFFFFF;
+  --color-card-border: #d0d4f2;
+  --color-card-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.502);
+  --color-team-builder-border: #EA5454;
+  --color-supervisor-border: #44D3D2;
+  --color-calculator-border: #549EF2;
+  --color-karma-border: #FCAE4A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  color: var(--color-primary);
+}
+
+.technology {
+  display: grid;
+  text-align: center;
+  padding: 40px;
+}
+
+.technology__header {
+  margin: 30px 250px 64px 250px;
+}
+
+.technology__title {
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 0.25px;
+  color: var(--color-secondary);
+  margin-bottom: 2px;
+}
+
+.technology__subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  color: var(--color-secondary);
+  margin-bottom: 13px;
+}
+
+.technology__highlight {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--color-highlight);
+}
+
+.technology__description {
+  font-size: 15px;
+  margin-inline: 290px;
+  line-height: 1.6em;
+  letter-spacing: 0.1px;
+  opacity: 50%;
+  color: var(--color-secondary);
+}
+
+.technology__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature {
+  background-color: var(--color-card-background);
+  border-radius: 8px;
+  box-shadow: var(--color-card-shadow);
+  padding: 32px;
+  width: 350px;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-top: 5px solid;
+}
+
+.feature--supervisor {
+  grid-column-start: 1;
+	grid-row-start: 3;
+  border-color: var(--color-supervisor-border);
+}
+
+.feature--team-builder {
+  grid-column-start: 2;
+	grid-row-start: 2;
+  border-color: var(--color-team-builder-border);
+}
+
+.feature--calculator {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  border-color: var(--color-calculator-border);
+}
+
+.feature--karma {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  border-color: var(--color-karma-border);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature__title {
+  font-size: 18px;
+  margin-right: 163px;
+  color: var(--color-secondary);
+}
+
+.feature__description {
+	font-size: 13px;
+  margin-bottom: 46px;
+  color: var(--color-secondary);
+}
+
+.feature__icon {
+  width: 64px;
+  height: 64px;
+  margin-left: 219px;
+}
+
+.footer__text {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(228, 45%, 44%);
+}
