@@ -4,13 +4,14 @@
   --color-primary: #FAFAFA;
   --color-secondary: #4D4F62;
   --color-highlight: #4951ec;
+  --color-highlight-background: #ff8463;
   --color-card-background: #FFFFFF;
   --color-card-border: #d0d4f2;
   --color-card-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.502);
-  --color-team-builder-border: hsl(0, 78%, 62%);
-  --color-supervisor-border: hsl(180, 62%, 55%);
-  --color-calculator-border: hsl(212, 86%, 64%);
-  --color-karma-border: hsl(34, 97%, 64%);
+  --color-team-builder-border: #ea5353;
+  --color-supervisor-border: #45d3d3;
+  --color-calculator-border: #549ef2;
+  --color-karma-border: #fcaf4a;
 }
 
 * {
@@ -56,7 +57,7 @@ body {
   font-weight: 280;
   text-transform: uppercase;
   color: var(--color-highlight);
-  background-color: #ff8463;
+  background-color: var(--color-highlight-background);
 }
 
 .technology__description {
@@ -136,7 +137,7 @@ body {
 @media (max-width: 767px) {
   .technology {
     display: block;
-    margin: 80px 24px;
+    margin: 80px 24px 76px 24px;
   }
 
   .technology__header {
@@ -170,7 +171,6 @@ body {
   .feature__description {
     margin-inline: 1px;
     margin-bottom: 33px;
-    opacity: 50%;
   }
 
   .feature__icon {
