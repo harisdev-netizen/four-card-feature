@@ -26,13 +26,19 @@ Your users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 
+
 ### Screens
 
 #### Desktop Preview
-![Screenshot](./assets/images/Desktop%20Preview.png)
+<div style="background-color:#F1F2F1; padding: 20px; text-align: center;">
+  <img src="./assets/images/Desktop%20Preview.png" alt="Desktop Preview" />
+</div>
 
 #### Mobile Preview
-![Screenshot](./assets/images/Mobile%20Preview.png)
+<div style="background-color:#F1F2F1; padding: 20px; text-align: center;">
+  <img src="./assets/images/Mobile%20Preview.png" alt="Mobile Preview" />
+</div>
+
 
 ### Links
 
