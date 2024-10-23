@@ -7,10 +7,10 @@
   --color-card-background: #FFFFFF;
   --color-card-border: #d0d4f2;
   --color-card-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.502);
-  --color-team-builder-border: #EA5454;
-  --color-supervisor-border: #44D3D2;
-  --color-calculator-border: #549EF2;
-  --color-karma-border: #FCAE4A;
+  --color-team-builder-border: hsl(0, 78%, 62%);
+  --color-supervisor-border: hsl(180, 62%, 55%);
+  --color-calculator-border: hsl(212, 86%, 64%);
+  --color-karma-border: hsl(34, 97%, 64%);
 }
 
 * {
@@ -86,9 +86,6 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-top: 5px solid;
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
 }
 
 .feature--modifier {
@@ -126,6 +123,7 @@ body {
 .feature__description {
   font-size: 13px;
   margin-bottom: 46px;
+  opacity: 50%;
   color: var(--color-secondary);
 }
 
@@ -137,35 +135,47 @@ body {
 
 @media (max-width: 767px) {
   .technology {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin: 80px 24px;
   }
 
   .technology__header {
-    margin: 30px 20px;
+    margin: 0 0 76px 0;
   }
 
   .technology__title,
   .technology__subtitle {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 24px;
+  }
+
+  .technology__subtitle {
+    margin-bottom: 13px;
   }
 
   .technology__description {
-    margin-inline: 20px;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin: 0;
   }
 
   .feature {
-    width: 100%;
-    padding: 20px;
+    padding: 25px;
   }
 
   .feature__title {
+    font-size: 20px;
     margin-right: 0;
   }
 
+  .feature__description {
+    margin-inline: 1px;
+    margin-bottom: 33px;
+    opacity: 50%;
+  }
+
   .feature__icon {
-    margin-left: 0;
+    margin-left: 232px;
+    width: 57px;
+    height: 57px;
   }
 }
