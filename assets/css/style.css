@@ -79,14 +79,14 @@ body {
 }
 
 .feature {
-  background-color: var(--color-card-background);
-  border-radius: 8px;
-  box-shadow: var(--color-card-shadow);
   padding: 32px;
-  width: 350px;
-  cursor: pointer;
+  max-width: 350px;
+  border-radius: 8px;
+  background-color: var(--color-card-background);
+  box-shadow: var(--color-card-shadow);
   transition: transform 0.3s ease-in-out;
   border-top: 5px solid;
+  cursor: pointer;
 }
 
 .feature--modifier {
