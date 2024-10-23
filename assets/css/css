@@ -135,3 +135,37 @@ body {
   margin-left: 219px;
 }
 
+@media (max-width: 767px) {
+  .technology {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .technology__header {
+    margin: 30px 20px;
+  }
+
+  .technology__title,
+  .technology__subtitle {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .technology__description {
+    margin-inline: 20px;
+    font-size: 14px;
+  }
+
+  .feature {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .feature__title {
+    margin-right: 0;
+  }
+
+  .feature__icon {
+    margin-left: 0;
+  }
+}
